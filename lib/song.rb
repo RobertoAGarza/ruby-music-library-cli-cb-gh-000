@@ -2,17 +2,17 @@ class Song
   attr_accessor :name
 
   @@all = []
-  
+
   def initialize(name)
     @name = name
   end
 
-  def self.all 
+  def self.all
     @@all
-  end 
+  end
 
-  def self.destroy_all 
+  def self.destroy_all
     @@all.clear
-  end 
-  
+  end
+
 end
