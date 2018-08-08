@@ -1,16 +1,28 @@
-class Artist 
+class Artist
 
-  attr_accessor :name 
+  attr_accessor :name
 
   @@all = []
-  
+
   def initialize(name)
-    @name = name 
+    @name = name
+  end
+
+  def self.all
+    @@all
+  end
+
+  def self.destroy_all 
+    @@all.clear 
   end 
 
-  def self.all 
-    @@all 
+  def save
+    @@all < self
   end 
 
-end 
+  def self.create(name)
+    newArtist = Artist.new(name)
+    newArtist.save 
+    newArtist 
+end
   
