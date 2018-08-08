@@ -17,13 +17,13 @@ class Artist
   end
 
   def save
-    @@all < self
+    @@all << self
   end
 
   def self.create(name)
     newArtist = Artist.new(name)
     newArtist.save
     newArtist
-  end 
-  
+  end
+
 end
