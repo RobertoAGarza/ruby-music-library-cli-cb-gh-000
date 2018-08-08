@@ -12,17 +12,18 @@ class Artist
     @@all
   end
 
-  def self.destroy_all 
-    @@all.clear 
-  end 
+  def self.destroy_all
+    @@all.clear
+  end
 
   def save
     @@all < self
-  end 
+  end
 
   def self.create(name)
     newArtist = Artist.new(name)
-    newArtist.save 
-    newArtist 
-end
+    newArtist.save
+    newArtist
+  end 
   
+end
