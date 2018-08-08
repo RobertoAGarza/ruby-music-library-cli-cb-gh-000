@@ -1,11 +1,11 @@
 class Song
-  attr_accessor :name, :artist
+  attr_accessor :name
 
   @@all = []
 
   def initialize(name, artist = nil)
     @name = name
-    @artist = artist
+    self.artist(artist)
 
   end
 
